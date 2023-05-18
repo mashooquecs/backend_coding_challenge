@@ -56,3 +56,11 @@ the elements occurring more than once in the given array.
 # Challenge 3
 Create a migration files to create the below structure, use the fields that you consider
 necessary for each tables
+
+
+# Challenge 4
+app/AppHumanResources/GroupByOwnersService.php
+ 
+The groupByOwners method takes an associative array as input, where the keys represent the file names and the values represent the corresponding owners. It then processes the array and groups the files by their owners.
+
+The test case demonstrates the usage of the groupByOwnersService by providing an example array and printing the resulting grouped files.
