@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AttendanceController;
+use App\Http\Controllers\ChallengeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,4 @@ use App\Http\Controllers\AttendanceController;
 */
 Route::get('attendance/{employeeId}/information', [AttendanceController::class, 'getAttendanceInformation']);
 Route::post('/attendance/upload', [AttendanceController::class, 'uploadAttendance']);
+Route::get('challenge-two', [ChallengeController::class, 'challengeTwo']);

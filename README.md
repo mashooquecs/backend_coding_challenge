@@ -44,3 +44,11 @@ app/AppHumanResources/Attendance/Application/AttendanceService.php: Contains the
 app/AppHumanResources/Attendance/Domain/Attendance.php: Defines the model class for attendance data.
 
 app/Http/Controllers/AttendanceController.php: Implements the controller class for attendance management. It calls the methods from the AttendanceService class to handle the API endpoints.
+
+
+
+# Challenge 2
+  ``` GET /api/challenge-two ```
+
+app/Http/Controllers/ChallengeController.php: Implements the controller class for challenge two - Given an array a[] of size N which contains elements from 0 to N-1, you need to find all
+the elements occurring more than once in the given array.
