@@ -8,16 +8,16 @@ This project allows users to upload attendance data in Excel format, store it in
 
 ## Installation
 1. Clone the repository from GitHub:
-    ```bash git clone https://github.com/your_username/attendance-management.git ```
+    ``` git clone https://github.com/your_username/attendance-management.git ```
 2. Navigate to the project directory:
-    ```bash cd attendance-management ```
+    ``` cd attendance-management ```
 3. Install dependencies using Composer:
-    ```bash composer install ```
+    ``` composer install ```
 4. Configure the database connection by editing the .env file and providing the necessary details.
 5. Run the database migrations to create the required tables:
-    ```bash php artisan migrate ```
+    ``` php artisan migrate ```
 6. Start the development server:
-    ```bash php artisan serve ```
+    ``` php artisan serve ```
 
 
 
@@ -25,14 +25,14 @@ This project allows users to upload attendance data in Excel format, store it in
 
 Uploading Attendance Data
 To upload attendance data, make a POST request with file & employee_id form data to the following API endpoint:
-  ```bash POST /api/attendance/upload ```
+  ``` POST /api/attendance/upload ```
 
  The request should include an Excel file containing the attendance data. The API endpoint will process the file, extract the relevant information, and store it in the database.
 
 
 Retrieving Attendance Information
 To retrieve attendance information for an employee along with total working hours, make a GET request to the following API endpoint:
-  ```bash GET /api/attendance/{employee_id}/information ```
+  ``` GET /api/attendance/{employee_id}/information ```
 
 
 
