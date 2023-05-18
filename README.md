@@ -8,9 +8,9 @@ This project allows users to upload attendance data in Excel format, store it in
 
 ## Installation
 1. Clone the repository from GitHub:
-    ``` git clone https://github.com/your_username/attendance-management.git ```
+    ``` git clone https://github.com/your_username/backend_coding_challenge.git ```
 2. Navigate to the project directory:
-    ``` cd attendance-management ```
+    ``` cd backend_coding_challenge ```
 3. Install dependencies using Composer:
     ``` composer install ```
 4. Configure the database connection by editing the .env file and providing the necessary details.
