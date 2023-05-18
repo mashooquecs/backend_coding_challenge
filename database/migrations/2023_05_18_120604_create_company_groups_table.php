@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLocationsTable extends Migration
+class CreateCompanyGroupsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,16 @@ class CreateLocationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('locations', function (Blueprint $table) {
+        Schema::create('company_groups', function (Blueprint $table) {
             $table->id();
-            $table->text('name');
+            $table->string('name');
             $table->unsignedBigInteger('company_id');
+            $table->unsignedBigInteger('parent_id')->nullable();
             $table->foreign('company_id')->references('id')->on('company')->onDelete('cascade');
+            $table->foreign('parent_id')->references('id')->on('company_groups')->onDelete('cascade');
             $table->timestamps();
+            $table->index(['name']);
+
         });
     }
 
@@ -29,6 +33,6 @@ class CreateLocationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('locations');
+        Schema::dropIfExists('company_groups');
     }
 }

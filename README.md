@@ -52,3 +52,7 @@ app/Http/Controllers/AttendanceController.php: Implements the controller class f
 
 app/Http/Controllers/ChallengeController.php: Implements the controller class for challenge two - Given an array a[] of size N which contains elements from 0 to N-1, you need to find all
 the elements occurring more than once in the given array.
+
+# Challenge 3
+Create a migration files to create the below structure, use the fields that you consider
+necessary for each tables
